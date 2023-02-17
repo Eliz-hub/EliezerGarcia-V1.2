@@ -1,0 +1,81 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Em Breve</title>
+
+ 
+    </script>
+</head>
+<body>
+
+    <div id="app">
+        <h1>
+            <span>E</span>
+            <span>M</span>
+            <span> </span>
+            <span>B</span>
+            <span>R</span>
+            <span>E</span>
+            <span>V</span>
+            <span>E</span>
+        </h1>
+    </div>
+
+    <script>
+        const h1 = document.getElementsByTagName('h1')[0];
+
+        setInterval(() => {
+        const randomNumber = Math.floor(Math.random() * 8) + 1;
+        h1.className = `position-${randomNumber}`;
+        }, 100);
+    </script>
+
+
+    <style>
+        html, body {
+            margin: 0;
+            padding: 0;
+            background: black;
+        }
+        h1 {
+            margin: 0;
+            line-height: 100vh;
+            text-align: center;
+            font-family: 'Helvetica Neue', sans-serif;
+            font-size: 10vw;
+            color: white;
+        }
+        h1 span {
+            display: inline-block;
+        }
+        h1.position-1 span:nth-child(1) {
+            transform: rotate(180deg);
+        }
+        h1.position-2 span:nth-child(2) {
+            transform: rotate(180deg);
+        }
+        h1.position-3 span:nth-child(3) {
+            transform: rotate(180deg);
+        }
+        h1.position-4 span:nth-child(4) {
+            transform: rotate(180deg);
+        }
+        h1.position-5 span:nth-child(5) {
+            transform: rotate(180deg);
+        }
+        h1.position-6 span:nth-child(6) {
+            transform: rotate(180deg);
+        }
+        h1.position-7 span:nth-child(7) {
+            transform: rotate(180deg);
+        }
+        h1.position-8 span:nth-child(8) {
+            transform: rotate(180deg);
+        }
+    </style>
+</body>
+</html>
